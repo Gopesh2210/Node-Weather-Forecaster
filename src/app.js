@@ -6,7 +6,7 @@ const weatherforecast = require('./utils/weatherforecast')
 
 
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 
 // define path for express config
 const publicDirPath = path.join(__dirname,'../public')
@@ -27,7 +27,7 @@ app.get('', (req, res) => {
     res.render('index',{
         title : "Home",
         name : "Weather",
-        weather : "32˚C",
+        weather : "Enter location to get the weather details",
         creator : "Gopesh Rajderkar"
     })
 })
@@ -74,20 +74,6 @@ app.get('/weather', (req, res) => {
 
 })
 
-// app.get('/products', (req, res) => {
-
-//     if(!req.query.search){
-//         return res.render('error',{
-//             title : 'Error',
-//             message : 'No search parameter entered',
-//             creator : "Gopesh Rajderkar"
-//         })
-//     }
-
-//     res.send({
-//        products : []
-//     })
-// })
 
 app.get('/help/*', (req, res) => {
     res.render('error',{
