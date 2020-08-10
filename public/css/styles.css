@@ -1,0 +1,91 @@
+body{
+    margin: 0 auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1{
+    color: darkolivegreen;
+    font-size:2em;
+    text-align: center;
+}
+
+p{
+    font-size: 1.5em;
+    color: darkolivegreen;
+    padding: 0 2em;
+    text-align: center;
+}
+
+.img-size{
+    width : 20em;
+    height : 25em;
+}
+.img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav{
+    background-color: black;
+    height: 4em;
+}
+.menu-list{
+   display: flex;
+   margin: auto;
+   text-decoration: none;
+}
+.menu-item-container{
+    margin: 1.5em 1em;
+}
+.menu-item{
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+.menu-item:hover{
+    color: greenyellow;
+}
+.template-position{
+    text-align: center;
+}
+.input-field{
+    height: 1em;
+    width: 25%;
+    padding: 1em;
+    font-size: 1em;
+    border: 3px solid darkolivegreen;
+}
+.input-btn{
+    padding: 1.65em;
+    width: 10%;
+    background-color: darkolivegreen;
+    color: white;
+    font-weight: bolder;
+}
+.error-position{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+.main-content{
+    min-height: 90vh;
+}
+
+footer{
+    margin: auto;
+    text-align: center;
+    border-top: lightgray 2px solid;
+    width: 90%;
+    padding: 1em;
+    text-align: end;
+}
+.footer-text{
+    color: darkolivegreen;
+    font-style: italic;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <link rel="icon" href="/assets/weather-icon.png">
+    <link rel="stylesheet" href="../../public/css/styles.css">
+</head>
+
+<body>
+    <div class="main-content">
+
+        {{>header}}
+        <div class="template-position">
+            <p>{{name}} : {{weather}}</p>
+            <form>
+                <input class="input-field" placeholder="Location" id="inputLocation">
+                <button class="input-btn">Search</button>
+            </form>
+        </div>
+
+        <div>
+            <p class="weather-preview" id="outputLocation"></p>
+            <p class="weather-preview" id="outputWeather"></p>
+        </div>
+
+    </div>
+
+    {{>footer}}
+
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
